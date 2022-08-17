@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+   <script src="https://kit.fontawesome.com/ff61fbf734.js" crossorigin="anonymous">
+   </script>  
+    <title>Facility</title>
+
+   <style>
+          *{
+            margin:0;
+            padding:0;    
+          }
+ /*------------HEADER-----------*/
+
+ .subheader{
+             height:60vh;
+             width:100%;
+             background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("https://dl.dropbox.com/s/k6rheixe2hawfei/pexels-pixabay-159775.jpg?dl=0");
+             background-size:cover;
+             background-position:center;                         
+ }
+
+  nav{
+     display:flex;
+     justify-content:space-between;      
+    }  
+
+  #links ul li{
+               list-style:none;
+               display:inline-block;
+               margin-top:20px;
+             }
+
+  nav img{
+          padding-top:5px;
+          padding-left:5px;
+      } 
+      
+  #links ul li a{
+                  text-decoration:none;
+                  color:pink;
+                  font-size:18px;                        
+      }        
+          
+  #links ul li a::after{
+                         content:'';
+                         display:block;
+                         width:0;
+                         height:2px;
+                         background: orange;
+                         margin:auto;
+                         transition:0.5s;                 
+  }
+  
+  #links ul li a:hover::after{
+                      width:100%;
+  }
+   
+  #links ul li a::before{
+                         content:'';
+                         display:block;
+                         width:0;
+                         height:2px;
+                         background: orange;
+                         margin:auto;
+                         transition:0.5s;                 
+  }
+  
+  #links ul li a:hover::before{
+                      width:100%;
+  }
+ 
+  #click{
+    display: none;
+  }
+  .menu-btn .fa{
+    display: none;
+  }
+
+ /*------------FACILITY-------------*/
+
+  .facility{width:80%;
+          text-align:center;
+          margin:auto;
+          padding-top:50px;
+          
+         
+ }
+  
+.row{
+     display: flex;
+}
+
+.facility h1{font-size:30px;
+             font-weight: 400;
+
+}
+
+.facility p{font-size:20px;
+
+}
+
+ .fac-col{flex-basis:31%;
+          border-radius:10px;
+          display:inline-block;
+          text-align:center; 
+          padding:30px;        
+ }
+ 
+figure{
+  overflow: hidden;
+  margin:0 10px;
+  cursor: zoom-in;
+}
+
+.fac-col img{display:block;
+             width:100%;
+             height: auto;
+             cursor:pointer;
+} 
+
+ .fac-col .zoom img{width:100%;
+              border-radius:10px;
+              transform:scale(1);
+              transition:1s;         
+ }
+
+ .fac-col .zoom:hover img{transform:scale(1.5);
+ }
+
+ .fac-col h3{margin-top:16px;
+             margin-bottom:15px;
+             text-align:center;
+ }
+ 
+  /*-----footer------*/
+ 
+ .footer{width:100%;
+         text-align:center;
+         padding:10px 0;
+         
+ } 
+ 
+ .footer h3{ 
+            font-size:20px;
+            margin-bottom:10px;                 
+ }
+ 
+ .footer p{margin-bottom:0;
+           font-size:20px;
+ }
+ 
+ .icons{color:orange;
+        margin:5px;
+        padding:13px;
+        font-size:30px;
+ }
+ .fab{margin:5px;
+ }
+  .fas{color:orange;
+       font-size:20px;
+  }   
+
+  /*----------- responsive navbar---------*/
+  @media(max-width:700px)
+{
+ 
+    
+    #click:checked~.menu-btn :before
+   
+   {  content:" \f00d";
+   }
+   
+   #click:checked~.links
+    {
+        left:100px;
+   }
+   #click:checked~.links1
+    {
+        left:100px;
+   }
+   #click:checked~.links2
+    {
+        left:100px;
+   }
+   #click:checked~.links3
+   {
+       left:100px;      
+   }
+   #click:checked~.links4
+    {
+        left:100px;
+   }
+        
+   .menu-btn .fa{display:block; 
+                 color:white;     
+                 font-size:30px;  
+                 margin-top:5px; 
+                 margin-right:10px;
+               }
+   
+    #links ul li a{
+          font-size:16px;
+    }
+   
+   .links ul li{list-style:none;
+               display:block;
+               margin-top:20px;                                                         
+            }
+                    
+   .links{position:absolute;
+          background-color:rgba(0,0,0,0.9);
+          height:70px;
+          width:200px;
+          top:8.5%;           
+          left:-200px;
+          text-align:center;
+          z-index:1;
+          transition:0.5s;
+                     
+       }
+     
+   .links1 ul li{list-style:none;
+            display:block;
+            padding:2px;
+            margin-top:20px;                             
+           }
+           
+   .links1{position:absolute;
+           background-color:rgba(0,0,0,0.9);
+           height:70px;
+           width:200px;
+           top:19.5%;           
+           left:-200px;
+           text-align:center;      
+           z-index:1;
+           transition:0.75s;           
+       }    
+     
+   .links2 ul li{list-style:none;
+                  display:block;
+                  padding:2px;
+                  margin-top:20px;                             
+           }
+           
+   .links2{position:absolute;
+            background-color:rgba(0,0,0,0.9);
+            height:70px;
+            width:200px;
+            top:30.5%;           
+            left:-200px;
+            text-align:center;
+            z-index:1;
+            transition:1s;           
+       }
+         
+   .links3 ul li{list-style:none;
+                 display:block;
+                 padding:2px;
+                 margin-top:20px;                             
+           }
+           
+   .links3{position:absolute;
+       background-color:rgba(0,0,0,0.9);
+       height:70px;
+       width:200px;
+       top:41.5%;           
+       left:-200px;
+       text-align:center;
+       z-index:1;
+       transition:1.5s;           
+       }
+         
+   .links4 ul li{list-style:none;
+            display:block;
+            padding:2px;
+            margin-top:20px;                             
+           }                   
+           
+   .links4{position:absolute;
+       background-color:rgba(0,0,0,0.9);
+       height:70px;
+       width:200px;
+       top:52.5%;           
+       left:-200px;
+       text-align:center;
+       z-index:1;
+       transition:1.75s;           
+       }  
+    /*----------facility----------*/
+ 
+    .facility{width:80%;
+          text-align:center;   
+          margin-bottom:10px;
+         
+ }
+  
+.row{
+     display:inline;
+}
+
+.facility h1{font-size:30px;
+             font-weight: 400;
+
+}
+
+.facility p{font-size:15px;
+            padding-bottom:50px;
+}
+
+ .fac-col{flex-basis:31%;
+          border-radius:10px;
+          display:inline-block;
+          padding: 0px;
+          text-align:center; 
+                 
+ }
+ 
+figure{
+  overflow: hidden;
+  margin:0 10px;
+  cursor: zoom-in;
+}
+
+.fac-col img{display:block;
+             width:100%;
+             height: auto;
+             cursor:pointer;
+} 
+
+ .fac-col .zoom img{width:100%;
+              border-radius:10px;
+              transform:scale(1);
+              transition:1s;         
+ }
+
+ .fac-col .zoom:hover img{transform:scale(1.5);
+ }
+
+ .fac-col h3{margin-top:16px;
+             margin-bottom:15px;
+             text-align:center;
+ }
+ /*-------------footer-------------*/
+ 
+ .footer{width:100%;
+    text-align:center;
+    padding:10px 0;
+    color: black; 
+} 
+
+.footer h3{font-weight:600;
+       font-size:20px;
+       margin-bottom:10px;  
+                
+}
+
+.footer p{margin-bottom:0;     
+      font-size:15px;
+}
+
+.icons{color:orange;
+   margin:5px;
+   padding:13px;
+   font-size:30px;
+}
+.fab{margin:5px;
+}
+.fas{color:orange;
+  font-size:20px;
+}
+
+}
+   </style>
+ </head>
+ <body>
+   <section class="subheader">
+     <nav>
+      <img src="https://dl.dropbox.com/s/9t8cpucyzwyozlq/IMG_20210506_221219.jpg?dl=0"
+      width="50px" height="50px">
+      
+       <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fa fa-bars" onclick="showmenu()"></i> 
+       </label>
+
+       
+       <div class="links" id="links">         
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+
+        <div class="links1" id="links">
+        <ul>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links2" id="links">
+        <ul>
+          <li>
+            <a href="">Facility</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links3" id="links">
+        <ul>
+          <li>
+            <a href="about us.html">About us</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links4" id="links">
+        <ul>
+          <li>
+            <a href="contact us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>   
+     </nav>
+   </section>
+
+ <section class="facility">
+    <h1>OUR FACILITIES</h1><br>
+     <p id="pra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+     id libero porta molestie. Nullam condimentum viverra luctus.</p> <br>
+    <div class="row">
+        <div class="fac-col">
+          <div class="zoom">
+          <figure>
+          <img src="https://dl.dropbox.com/s/szo2g7dvop48gv9/pexels-pixabay-256455.jpg?dl=0" alt="book">
+          </figure>
+           <h3>LIBRARY</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+           id libero porta molestie. Nullam condimentum viverra luctus.</p>
+        </div>
+        </div>
+        
+       <div class="fac-col">
+        <div class="zoom">
+          <figure>
+         <img src="https://dl.dropbox.com/s/s7n7kayazxral6l/Sahil.jpg?dl=0" alt="book">
+          </figure>
+         <h3>SPORTS</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+        id libero porta molestie. Nullam condimentum viverra luctus.</p>
+       </div>
+       </div>
+       <div class="fac-col">
+        <div class="zoom">
+          <figure>
+         <img src="https://dl.dropbox.com/s/qocnhhvmqrpn2bx/IMG_31102021_174144_%284163_x_3156_pixel%29.jpg?dl=0" alt="book">
+          </figure>
+         <h3>CANTEEN</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+        id libero porta molestie. Nullam condimentum viverra luctus.</p>
+       </div>
+       </div>
+    
+      </div>
+    </section>
+  
+<!------footer----->
+
+<section class="footer">  
+  <h3>About us</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+   id libero porta molestie.</p>
+ <div class="icons">
+   <i class="fab fa-facebook"></i>
+   <i class="fab fa-instagram"></i>
+   <i class="fab fa-twitter"></i>
+ </div>
+ <p>Created by sahil shah</p>
+</section>
+
+ </body>
+ </html>

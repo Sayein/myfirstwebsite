@@ -1,0 +1,511 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box; 
+}
+
+/*-----HEADER------*/
+
+@media(max-width:700px)
+{
+#click{
+    display:none;
+}
+
+.header{
+    height:800px;
+    width:100%;              
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://dl.dropbox.com/s/93symqrkmicazb3/cambridge.jpeg?dl=0);
+    background-position:center;
+    background-size: cover;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;   
+}  
+
+#links ul li{
+         list-style:none;
+         display:inline-block;
+} 
+
+#links ul li a{text-decoration:none;
+           color:pink;
+           font-size:16px; 
+            
+}
+
+#links ul li a::after{content:'';
+                  width:0;
+                  height:2px;
+                  background:orange;
+                  display:block;
+                  margin:auto;
+                  transition:0.5s;
+}
+
+#links ul li a::before{content:'';
+                  width:0;
+                  height:2px;
+                  background:orange;
+                  display:block;
+                  margin:auto;
+                  transition:0.5s;
+} 
+
+#links ul li a:hover::after{width:30%;
+                        
+}
+#links ul li a:hover::before{width:30%;
+}
+
+}
+
+/*---------TITLE-----*/
+@media(max-width:700px)
+{
+.title{width:80%;
+    color:white;
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+.title h1{
+font-size:30px;
+}
+.title p {margin:10px 10px 30px;
+       font-size:17px;
+       font-weight:200;
+}
+.menu-btn .fa{display:none;  
+}
+.hero-btn{display:inline-block;
+     text-decoration:none;
+     color:white;
+     border:2px solid orange;
+     padding:12px 30px;
+     font-size:13px;
+     position:relative;                     
+}
+
+.hero-btn:hover{color:white;
+           border:2px solid white;
+           background-color:orange;
+           transition:0.5s;                 
+}
+
+}
+
+
+/*------LINKS------*/
+
+@media(max-width:700px)
+{
+ #click:checked ~ .menu-btn :before
+{
+  content: "\f00d";
+}
+
+#click:checked~.links
+ {
+     left:100px;
+}
+#click:checked~.links1
+ {
+     left:100px;
+}
+#click:checked~.links2
+ {
+     left:100px;
+}
+#click:checked~.links3
+{
+    left:100px;      
+}
+#click:checked~.links4
+ {
+     left:100px;
+}
+  
+#links ul li{list-style:none;
+             display:block;
+            margin-top:20px;
+}            
+
+
+.menu-btn .fa{display:block;
+              color:white;
+              font-size:30px;  
+              margin-top:5px;
+              margin-right:10px;
+            }
+             
+.links{position:absolute;
+       background-color:rgba(0,0,0,0.9);
+       height:70px;
+       width:200px;
+       top:7%;           
+       left:-200px;
+       text-align:center;
+       z-index:1;
+       transition:0.5s;           
+    }
+  
+.links1 ul li{list-style:none;
+         display:block;
+         padding:2px;
+         margin-top:20px;                             
+        }
+        
+.links1{position:absolute;
+        background-color:rgba(0,0,0,0.9);
+        height:70px;
+        width:200px;
+        top:16%;           
+        left:-200px;
+        text-align:center;
+        z-index:1;
+        transition:0.75s;           
+    }    
+  
+.links2 ul li{list-style:none;
+               display:block;
+               padding:2px;
+               margin-top:20px;                             
+        }
+        
+.links2{position:absolute;
+         background-color:rgba(0,0,0,0.9);
+         height:70px;
+         width:200px;
+         top:25%;           
+         left:-200px;
+         text-align:center;
+         z-index:1;
+         transition:1s;           
+    }
+      
+.links3 ul li{list-style:none;
+              display:block;
+              padding:2px;
+              margin-top:10px;                             
+        }
+        
+.links3{position:absolute;
+    background-color:rgba(0,0,0,0.9);
+    height:70px;
+    width:200px;
+    top:34%;           
+    left:-200px;
+    text-align:center;
+    z-index:1;
+    transition:1.5s;           
+    }
+      
+.links4 ul li{list-style:none;
+         display:block;
+         padding:2px;
+         margin-top:20px;                             
+        }
+        
+.links4{position:absolute;
+    background-color:rgba(0,0,0,0.9);
+    height:70px;
+    width:200px;
+    top:43%;           
+    left:-200px;
+    text-align:center;
+    z-index:1;
+    transition:1.75s;           
+    }  
+              
+}
+
+/*------COURSES---------*/
+ 
+
+@media (max-width:700px)
+{
+
+.courses h1{
+    left: 0%;
+       transform: translate(0%,0%);
+}
+.courses #para{
+    font-size:17px;
+}
+.courses p{
+    font-size:17px;
+}
+.courses{
+            left:0%;
+            transform: translate(-6%,0%);
+    }
+
+.row{
+    flex-direction:column;
+} 
+}
+
+/*--------CAMPUS----------*/
+
+@media(max-width:700px)
+{
+.campus{
+        width:80%;
+        text-align:center;
+        margin:auto;
+        padding-top:40px;
+        left:0%;
+        transform: translate(0%,0%);
+}
+
+.campus h1{
+           font-size:30px;
+           font-weight:500;
+}
+
+.campus p{
+          font-size:17px;
+          font-weight:300;
+
+}
+
+.campus-col{
+          
+           flex-basis:31%;
+           border-radius:10px;
+           margin-bottom:20px;
+           position:relative;
+           overflow:hidden;
+} 
+
+ 
+.campus-col img{width:100%;
+                display:block;               
+}
+
+.layer{background:rgba(0,0,0,0.5);
+       height:100%;
+       width:100%;
+       position:absolute;
+       top:0;
+       left:0;
+       transition:0.5s;
+} 
+ 
+ .layer:hover{
+              background:transparent;
+ }
+ 
+ .layer h3{width:100%;
+           font-weight:500;
+           color:white;
+           bottom:0;        
+           position:absolute;
+           opacity:0;
+           transition:0.5s;
+ }
+ 
+ .layer:hover h3{opacity:1;
+                 bottom:50%;                
+ }
+
+}
+
+/*---------FACILITY-----------*/
+
+@media (max-width:700px)
+{
+.facility{width:80%;
+text-align:center;
+padding-top:40px;  
+}
+
+.facility h1{
+             font-size:30px;
+             font-weight:400;
+             
+}            
+
+.facility #pra{
+     font-size:17px;
+   
+}
+
+.fac-col{
+   
+    flex-basis:31%;
+    border-radius:10px;
+    display:inline-block;
+    margin-bottom:10%;
+    text-align:center;
+}
+
+figure{
+overflow: hidden;
+margin:0 10px;
+cursor: zoom-in;
+}
+
+.fac-col img{
+            width:100%;
+            cursor:pointer;
+} 
+
+.fac-col .zoom img{width:100%;
+border-radius:10px;
+transform:scale(1);
+transition:1s;         
+}
+
+.fac-col .zoom:hover img{
+    transform:scale(1.5);
+}
+
+.fac-col h3{margin-top:16px;
+            margin-right:20px;
+            margin-bottom:15px;
+            text-align:center;
+}
+
+.fac-col p{
+    font-size:17px;
+    padding:0;
+    text-align: center;
+}
+
+}
+
+/*--------TESTEMONIALS----------*/
+@media(max-width:700px)
+{
+.test{width:80%;
+    margin:auto;
+    padding-top:20px;
+    text-align:center;     
+}
+
+.test h1{font-weight:400;
+       font-size:30px;
+}
+
+.test p{
+    font-size:17px; 
+    padding-bottom:30px;    
+}
+
+.test-col{flex-basis:44%;
+         border-radius:50px;
+         margin-bottom:5%;
+         text-align:left;
+         padding:25px;
+         background:rgba(245, 136, 136, 0.445);
+         display:flex;
+          
+}
+
+.test-col:hover{background-color:cyan;
+               transition:1s;
+}
+
+.test-col img{height:60px;
+             border-radius:50px;
+                        
+}
+.test-col p{padding:10px;
+}
+.test-col h3{margin-top:15px;
+            text-align:left;
+}
+.test-col .fas{color:orange;
+}
+.test-col:hover .fas{color:yellow;
+                    transition:1s;
+}
+
+}
+
+/*---------CTA-----------*/
+@media(max-width:700px)
+{
+.cta{
+    margin-top:30px;
+    left:0%;
+    transform:translate(13%,0%);
+    margin-bottom:20px; 
+    width:80%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://dl.dropbox.com/s/veo7rxgcl1fugbc/qt-coworking-space.jpg?dl=0);
+    background-size:cover;
+    border-radius:10px;
+    padding:10%;
+}
+.cta h1{
+      left:0%;
+      transform: translate(10%,0%);
+      font-size:20px;
+      color:white;
+      margin-bottom:20px;
+}
+
+.cta a{left:0%;
+    transform: translate(23%,0%); 
+    font-size:17px;
+    }
+
+}
+
+/*----------FOOTER---------*/
+
+@media(max-width:700px)
+{
+.footer{width:100%;
+    text-align:center;
+    padding:10px 0;
+    color: black; 
+} 
+
+.footer h3{font-weight:600;
+       font-size:20px;
+       margin-bottom:10px;  
+                
+}
+
+.footer p{margin-bottom:0;     
+      font-size:15px;
+}
+
+.icons{color:orange;
+   margin:5px;
+   padding:13px;
+   font-size:30px;
+}
+.fab{margin:5px;
+}
+.fas{color:orange;
+  font-size:20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

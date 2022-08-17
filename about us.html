@@ -1,0 +1,422 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/ff61fbf734.js" crossorigin="anonymous">
+  </script>
+    <title>Aboutus</title>
+
+   <style>
+          *{
+            margin:0;
+            padding:0;    
+          }
+ /*------------HEADER-----------*/
+
+ .subheader{
+             height:60vh;
+             width:100%;
+             background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://dl.dropbox.com/s/pewlb6y2x02zec5/albert-vincent-wu-Tgyzloxnw6E-unsplash.jpg?dl=0);
+             background-size:cover;
+             background-position:center; 
+                                     
+ }
+
+  nav{
+     display:flex;
+     justify-content:space-between;      
+    }  
+
+  #links ul li{
+               list-style:none;
+               display:inline-block;
+               margin-top:20px;
+             }
+
+  nav img{
+          padding-top:5px;
+          padding-left:5px;
+      } 
+      
+  #links ul li a{
+                  text-decoration:none;
+                  color:pink;
+                  font-size:18px;                        
+      }        
+          
+  #links ul li a::after{
+                         content:'';
+                         display:block;
+                         width:0;
+                         height:2px;
+                         background: orange;
+                         margin:auto;
+                         transition:0.5s;                 
+  }
+  
+  #links ul li a:hover::after{
+                      width:100%;
+  }
+   
+  #links ul li a::before{
+                         content:'';
+                         display:block;
+                         width:0;
+                         height:2px;
+                         background: orange;
+                         margin:auto;
+                         transition:0.5s;                 
+  }
+  
+  #links ul li a:hover::before{
+                      width:100%;
+  }
+ 
+  #click{
+    display: none;
+  }
+  .menu-btn .fa{
+    display: none;
+  }
+  
+/*------------about us----------*/
+
+  .container{ 
+              width:100%;
+              margin: auto;
+              padding-top:30px;
+              text-align: center;         
+  } 
+  
+  .container h1{
+                 font-size:30px;
+                 font-weight: 500;
+  }
+
+.row{ 
+     display: flex;
+     justify-content: space-between;
+}
+
+  .col{
+    flex-basis:60%;
+        margin:100px;
+  }
+  
+  .col img{
+            width:100%;
+  }
+
+  .col h3{
+          margin-bottom:10px;
+   }
+
+  .col p{
+         
+         padding-bottom:20px;
+  }
+
+  .hero-btn {
+            text-decoration: none;
+            color:black;
+            border:3px solid orange;
+            padding:10px;
+  }
+
+  .hero-btn:hover{
+                  background-color:orange;
+                  color: white;
+  }
+
+  /*-----footer------*/
+ 
+ .footer{width:100%;
+         text-align:center;
+         padding:10px 0;
+         
+ } 
+ 
+ .footer h3{ 
+            font-size:20px;
+            margin-bottom:10px;  
+                      
+ }
+ 
+ .footer p{margin-bottom:0;
+           font-size:20px;
+ }
+ 
+ .icons{color:orange;
+        margin:5px;
+        padding:13px;
+        font-size:30px;
+ }
+ .fab{margin:5px;
+ }
+  .fas{color:orange;
+       font-size:20px;
+  }
+    
+
+  /*----------- responsive navbar---------*/
+  @media(max-width:700px)
+  {
+ 
+  /*----------header---------*/
+
+    #click:checked~.menu-btn :before
+{
+  content:" \f00d";
+}
+
+#click:checked~.links
+ {
+     left:100px;
+}
+#click:checked~.links1
+ {
+     left:100px;
+}
+#click:checked~.links2
+ {
+     left:100px;
+}
+#click:checked~.links3
+{
+    left:100px;      
+}
+#click:checked~.links4
+ {
+     left:100px;
+}
+     
+.menu-btn .fa{display:block; 
+              color:white;     
+              font-size:30px;  
+              margin-top:5px; 
+              margin-right:10px;
+            }
+
+ #links ul li a{
+       font-size:16px;
+ }
+
+.links ul li{list-style:none;
+            display:block;
+            margin-top:20px;                                                         
+         }
+                 
+.links{position:absolute;
+       background-color:rgba(0,0,0,0.9);
+       height:70px;
+       width:200px;
+       top:8.5%;           
+       left:-200px;
+       text-align:center;
+       z-index:1;
+       transition:0.5s;
+                  
+    }
+  
+.links1 ul li{list-style:none;
+         display:block;
+         padding:2px;
+         margin-top:20px;                             
+        }
+        
+.links1{position:absolute;
+        background-color:rgba(0,0,0,0.9);
+        height:70px;
+        width:200px;
+        top:19.5%;           
+        left:-200px;
+        text-align:center;      
+        z-index:1;
+        transition:0.75s;           
+    }    
+  
+.links2 ul li{list-style:none;
+               display:block;
+               padding:2px;
+               margin-top:20px;                             
+        }
+        
+.links2{position:absolute;
+         background-color:rgba(0,0,0,0.9);
+         height:70px;
+         width:200px;
+         top:30.5%;           
+         left:-200px;
+         text-align:center;
+         z-index:1;
+         transition:1s;           
+    }
+      
+.links3 ul li{list-style:none;
+              display:block;
+              padding:2px;
+              margin-top:20px;                             
+        }
+        
+.links3{position:absolute;
+    background-color:rgba(0,0,0,0.9);
+    height:70px;
+    width:200px;
+    top:41.5%;           
+    left:-200px;
+    text-align:center;
+    z-index:1;
+    transition:1.5s;           
+    }
+      
+.links4 ul li{list-style:none;
+         display:block;
+         padding:2px;
+         margin-top:20px;                             
+        }                   
+        
+.links4{position:absolute;
+    background-color:rgba(0,0,0,0.9);
+    height:70px;
+    width:200px;
+    top:52.5%;           
+    left:-200px;
+    text-align:center;
+    z-index:1;
+    transition:1.75s;           
+    }  
+    .footer{width:100%;
+    text-align:center;
+    padding:10px 0;
+    color: black; 
+} 
+/*---------container---------*/
+ 
+.container{ 
+            width:100%;
+            padding-top:50px;
+            margin: auto;
+            padding-bottom:40px; 
+            text-align: center;         
+  } 
+  
+.row{
+    flex-direction: column;
+}
+
+.col{
+    flex-basis:60%;
+        margin:50px;
+  }
+/*---------footer----------*/
+
+.footer h3{font-weight:600;
+       font-size:20px;
+       margin-bottom:10px;  
+                
+}
+
+.footer p{margin-bottom:0;     
+      font-size:15px;
+}
+
+.icons{color:orange;
+   margin:5px;
+   padding:13px;
+   font-size:30px;
+}
+.fab{margin:5px;
+}
+.fas{color:orange;
+  font-size:20px;
+}
+
+    
+  }
+   </style>
+ </head>
+ <body>
+   <section class="subheader">
+     <nav>
+      <img src="https://dl.dropbox.com/s/9t8cpucyzwyozlq/IMG_20210506_221219.jpg?dl=0"
+      width="50px" height="50px">
+
+       <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fa fa-bars"></i> 
+       </label>
+
+       
+       <div class="links" id="links">         
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+
+        <div class="links1" id="links">
+        <ul>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links2" id="links">
+        <ul>
+          <li>
+            <a href="facility.html">Facility</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links3" id="links">
+        <ul>
+          <li>
+            <a href="">About us</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links4" id="links">
+        <ul>
+          <li>
+            <a href="contact us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>   
+     </nav>
+   </section>
+   
+   <section class="container">
+    <h1>About us</h1>  
+    <div class="row">
+      <div class="col">
+        <h3>Everything about us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+        id libero porta molestie. Nullam condimentum viverra luctus. Proin semper
+          </p>
+        <a class="hero-btn" href="#">APPLY NOW</a>
+      </div>
+
+      <div class="col">
+        <img src="https://dl.dropbox.com/s/2ud4s5bzgiaes7y/pexels-fauxels-3184328.jpg?dl=0" alt="">
+        </div> 
+    </div>   
+   </section>
+
+    <section class="footer">  
+      <h3>About us</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+       id libero porta molestie.</p>
+     <div class="icons">
+       <i class="fab fa-facebook"></i>
+       <i class="fab fa-instagram"></i>
+       <i class="fab fa-twitter"></i>
+     </div>
+     <p>Created by sahil shah</p>
+   </section>
+ </body>
+ </html>

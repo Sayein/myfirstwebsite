@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 800px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://dl.dropbox.com/s/93symqrkmicazb3/cambridge.jpeg?dl=0);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+#links ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#links ul li a {
+  text-decoration: none;
+  color: pink;
+  font-size: 18px;
+}
+
+#links ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#links ul li a::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#links ul li a:hover::after {
+  width: 100%;
+}
+
+#links ul li a:hover::before {
+  width: 100%;
+}
+
+#links {
+  text-align: center;
+}
+
+.title {
+  width: 80%;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 30px;
+}
+
+.title p {
+  margin: 10px 10px 30px;
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 10px;
+}
+
+.menu-btn .fa {
+  display: none;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid orange;
+  padding: 12px 30px;
+  font-size: 13px;
+  position: relative;
+}
+
+.hero-btn:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: orange;
+  transition: 0.5s;
+}
+
+#click {
+  display: none;
+}
+
+/*----courses-----*/
+
+.courses {
+  margin-left: 55px;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  left: 0%;
+  transform: translate(7%, 0%);
+}
+
+.courses h1 {
+  left: 0%;
+  transform: translate(5%, 0%);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.courses #para {
+  font-size: 20px;
+}
+
+.courses p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 22px;
+  padding: 15px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: rgba(250, 114, 243, 0.747);
+  color: white;
+  margin-bottom: 5%;
+  margin: 5px;
+  padding: 20px 1px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.course .h3 {
+  text-align: center;
+  font-weight: 200;
+  margin: 5px 0;
+
+}
+
+.course-col:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 0 black;
+}
+
+/*----campus-----*/
+.campus {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+
+}
+
+.campus h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.campus p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: transparent;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  opacity: 1;
+  bottom: 50%;
+}
+
+/*-----facility-----*/
+
+.facility {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+
+}
+
+.facility h1 {
+  font-size: 30px;
+  font-weight: 400;
+
+}
+
+.facility p {
+  font-size: 20px;
+
+}
+
+.fac-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 40px;
+  text-align: center;
+
+
+}
+
+figure {
+  overflow: hidden;
+  margin: 0 10px;
+  cursor: zoom-in;
+}
+
+.fac-col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.fac-col .zoom img {
+  width: 100%;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: 1s;
+}
+
+.fac-col .zoom:hover img {
+  transform: scale(1.5);
+}
+
+.fac-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+/*-----testimonial-----*/
+
+.test {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.test h1 {
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.test p {
+  font-size: 20px;
+
+}
+
+.test-col {
+  flex-basis: 44%;
+  border-radius: 50px;
+  margin-bottom: 5%;
+  text-align: left;
+  padding: 25px;
+  background: rgba(245, 136, 136, 0.445);
+  display: flex;
+  margin-right: 5px;
+
+}
+
+.test-col:hover {
+  background-color: cyan;
+  transition: 1s;
+}
+
+.test-col img {
+  height: 60px;
+  border-radius: 50px;
+
+}
+
+.test-col p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.test-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.test-col .fas {
+  color: orange;
+}
+
+.test-col:hover .fas {
+  color: yellow;
+  transition: 1s;
+}
+
+/*------cta------*/
+
+.cta {
+  left: 0%;
+  transform: translate(13%, 0%);
+  margin-bottom: 20px;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://dl.dropbox.com/s/veo7rxgcl1fugbc/qt-coworking-space.jpg?dl=0);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 100px;
+}
+
+.cta h1 {
+  left: 0%;
+  transform: translate(40%, 0%);
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cta a {
+  left: 0%;
+  transform: translate(220%, 0%);
+  font-size: 20px;
+}
+
+/*-----footer------*/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.footer h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.icons {
+  color: orange;
+  margin: 5px;
+  padding: 13px;
+  font-size: 30px;
+}
+
+.fab {
+  margin: 5px;
+}
+
+.fas {
+  color: orange;
+  font-size: 20px;
+}

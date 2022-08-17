@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+   <script src="https://kit.fontawesome.com/ff61fbf734.js" crossorigin="anonymous">
+   </script>
+    <title>Contact us</title>
+
+   <style>
+          *{
+            margin:0;
+            padding:0;    
+          }
+ /*------------HEADER-----------*/
+
+ .subheader{
+             height:60vh;
+             width:100%;
+             background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("https://dl.dropbox.com/s/ssbbcbzpb2wx0w4/pexels-chept%C3%A9-cormani-1416530.jpg?dl=0");
+             background-size:cover;
+             background-position:center;                         
+ }
+
+  nav{
+     display:flex;
+     justify-content:space-between;      
+    }  
+
+  #links ul li{
+               list-style:none;
+               display:inline-block;
+               margin-top:20px;
+             }
+
+  nav img{
+          padding-top:5px;
+          padding-left:5px;
+      } 
+      
+  #links ul li a{
+                  text-decoration:none;
+                  color:pink;
+                  font-size:18px;                        
+      }        
+          
+  #links ul li a::after{
+                         content:'';
+                         display:block;
+                         width:0;
+                         height:2px;
+                         background: orange;
+                         margin:auto;
+                         transition:0.5s;                 
+  }
+  
+  #links ul li a:hover::after{
+                      width:100%;
+  }
+   
+  #links ul li a::before{
+                         content:'';
+                         display:block;
+                         width:0;
+                         height:2px;
+                         background: orange;
+                         margin:auto;
+                         transition:0.5s;                 
+  }
+  
+  #links ul li a:hover::before{
+                      width:100%;
+  }
+ 
+  #click{
+    display: none;
+  }
+  .menu-btn .fa{
+    display: none;
+  }
+    
+  .location{
+            width: 80%;
+            margin:auto; 
+            padding:35px;           
+  }
+
+  .location h1{
+               font-size:30px;
+               font-weight: 500;
+               text-align: center;
+               padding-bottom:30px;
+  }
+
+  .location iframe{
+                    width:100%;                  
+  }
+
+  .contact{
+           width:80%;
+           margin:auto;
+           text-align: center;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .col{
+       margin-bottom:30px;
+  }
+  /*-----footer------*/
+ 
+ .footer{width:100%;
+         text-align:center;
+         padding:10px 0;
+         
+ } 
+ 
+ .footer h3{ 
+            font-size:20px;
+            margin-bottom:10px;  
+                      
+ }
+ 
+ .footer p{margin-bottom:0;
+           font-size:20px;
+ }
+ 
+ .icons{color:orange;
+        margin:5px;
+        padding:13px;
+        font-size:30px;
+ }
+ .fab{margin:5px;
+ }
+  .fas{color:orange;
+       font-size:20px;
+  }
+
+  /*----------- responsive navbar---------*/
+
+  @media(max-width:700px)
+  {
+ 
+    
+    #click:checked~.menu-btn :before
+{
+  content:" \f00d";
+}
+
+#click:checked~.links
+ {
+     left:100px;
+}
+#click:checked~.links1
+ {
+     left:100px;
+}
+#click:checked~.links2
+ {
+     left:100px;
+}
+#click:checked~.links3
+{
+    left:100px;      
+}
+#click:checked~.links4
+ {
+     left:100px;
+}
+     
+.menu-btn .fa{display:block; 
+              color:white;     
+              font-size:30px;  
+              margin-top:5px; 
+              margin-right:10px;
+            }
+
+ #links ul li a{
+       font-size:16px;
+ }
+
+.links ul li{list-style:none;
+            display:block;
+            margin-top:20px;                                                         
+         }
+                 
+.links{position:absolute;
+       background-color:rgba(0,0,0,0.9);
+       height:70px;
+       width:200px;
+       top:8.5%;           
+       left:-200px;
+       text-align:center;
+       z-index:1;
+       transition:0.5s;
+                  
+    }
+  
+.links1 ul li{list-style:none;
+         display:block;
+         padding:2px;
+         margin-top:20px;                             
+        }
+        
+.links1{position:absolute;
+        background-color:rgba(0,0,0,0.9);
+        height:70px;
+        width:200px;
+        top:19.5%;           
+        left:-200px;
+        text-align:center;      
+        z-index:1;
+        transition:0.75s;           
+    }    
+  
+.links2 ul li{list-style:none;
+               display:block;
+               padding:2px;
+               margin-top:20px;                             
+        }
+        
+.links2{position:absolute;
+         background-color:rgba(0,0,0,0.9);
+         height:70px;
+         width:200px;
+         top:30.5%;           
+         left:-200px;
+         text-align:center;
+         z-index:1;
+         transition:1s;           
+    }
+      
+.links3 ul li{list-style:none;
+              display:block;
+              padding:2px;
+              margin-top:20px;                             
+        }
+        
+.links3{position:absolute;
+    background-color:rgba(0,0,0,0.9);
+    height:70px;
+    width:200px;
+    top:41.5%;           
+    left:-200px;
+    text-align:center;
+    z-index:1;
+    transition:1.5s;           
+    }
+      
+.links4 ul li{list-style:none;
+         display:block;
+         padding:2px;
+         margin-top:20px;                             
+        }                   
+        
+.links4{position:absolute;
+    background-color:rgba(0,0,0,0.9);
+    height:70px;
+    width:200px;
+    top:52.5%;           
+    left:-200px;
+    text-align:center;
+    z-index:1;
+    transition:1.75s;           
+    }  
+
+/*----------contact us----------*/
+
+.row{
+     display: inline;
+     margin:10px;
+}
+
+.col{
+     padding:10px;
+}
+
+/*----------foooter-------------*/
+
+    .footer{width:100%;
+    text-align:center;
+    padding:10px 0;
+    color: black; 
+} 
+
+.footer h3{font-weight:600;
+       font-size:20px;
+       margin-bottom:10px;  
+                
+}
+
+.footer p{margin-bottom:0;     
+      font-size:15px;
+}
+
+.icons{color:orange;
+   margin:5px;
+   padding:13px;
+   font-size:30px;
+}
+.fab{margin:5px;
+}
+.fas{color:orange;
+  font-size:20px;
+}
+    
+  }
+   </style>
+ </head>
+ <body>
+   <section class="subheader">
+     <nav>
+      <img src="https://dl.dropbox.com/s/9t8cpucyzwyozlq/IMG_20210506_221219.jpg?dl=0"
+      width="50px" height="50px">
+      
+       <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fa fa-bars" onclick="showmenu()"></i> 
+       </label>
+
+       
+       <div class="links" id="links">         
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+
+        <div class="links1" id="links">
+        <ul>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links2" id="links">
+        <ul>
+          <li>
+            <a href="facility.html">Facility</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links3" id="links">
+        <ul>
+          <li>
+            <a href="about us.html">About us</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="links4" id="links">
+        <ul>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </div>   
+     </nav>
+   </section>
+ 
+   <!---------contact us---------->
+  
+   <section class="location">
+     <h1>Contact us</h1>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.07801598107!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1635756578422!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </section>
+
+   <section class="contact">
+
+      <div class="row">
+        <div class="col">
+          <i class="fas fa-home"></i> 
+          <span>
+            <h5>dhdfnf,chawljdkr,f</h5>
+            <p>india, maharashtra, mumbai</p>
+          </span> 
+        </div>
+        <div class="col">
+          <i class="fas fa-phone"></i> 
+          <span>
+            <h5>987048363889</h5>
+            <p>24x7 service</p>
+          </span> 
+        </div>
+        <div class="col">
+          <i class="fas fa-envelope"></i> 
+          <span>
+            <h5>eckvjfvo@gmail.com</h5>
+            <p>email us</p>
+          </span> 
+        </div>
+      </div>
+
+   </section>
+
+   <!------footer----->
+
+<section class="footer">  
+  <h3>About us</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris
+   id libero porta molestie.</p>
+ <div class="icons">
+   <i class="fab fa-facebook"></i>
+   <i class="fab fa-instagram"></i>
+   <i class="fab fa-twitter"></i>
+ </div>
+ <p>Created by sahil shah</p>
+</section>
+
+ </body>
+ </html>
